@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>旋转特效</title>
+	<meta http-equiv="Content-type" content="txt/html" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/Carousel.js"></script>
+</head>
+<body>
+	<div class="J_poster poster-main" data-setting='{
+		"width":1000,
+		"height":270,
+		"posterWidth":640,
+		"posterHeight":270,
+		"verticalAlign":"middle",
+		"speed":500,
+		"scale":0.9
+	}'>
+		<ul class="poster-main poster-list">
+			<li class="poster-item li-1" width="100%"></li>
+			<li class="poster-item li-2" width="100%"></li>
+			<li class="poster-item li-3" width="100%"></li>
+			<li class="poster-item li-4" width="100%"></li>
+			<li class="poster-item li-5" width="100%"></li>
+			<li class="poster-item li-6" width="100%"></li>
+			<li class="poster-item li-2" width="100%"></li>
+			<li class="poster-item li-3" width="100%"></li>
+			<li class="poster-item li-4" width="100%"></li>
+		</ul>		
+		<div class="poster-pre-pic"></div>
+		<div class="poster-next-pic"></div>
+	</div>
+
+<script type="text/javascript">
+	$(function(){
+		// var carousel = new Carousel($(".J_poster").eq(0));
+
+		Carousel.init($(".J_poster"));
+	})
+</script>
+</body>
+</html>
